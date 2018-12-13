@@ -30,6 +30,11 @@ class Point:
         else:
             return(False)
     
+    def totalDistance(self, plist):
+        sum=0
+        for p in plist:
+            sum += self.distance(p)
+        return(sum)
     
 
 def findGrid(plist):
@@ -104,8 +109,19 @@ def findMaxFiniteArea(pmin, pmax, resmap):
 
     return(max)
 
+def calcProxyRegion(pmin,pmax,mindistance,plist):
 
-def solve(filename):
+    area = 0    
+    for i in range(pmin.y,pmax.y+1):
+        for j in range(pmin.x,pmax.x+1):
+            target = Point(j,i)
+            dist = target.totalDistance(plist) 
+            if(dist < mindistance):
+                area += 1
+
+    return area
+
+def solve(filename, mindistance):
 
     pntlist = []
 
@@ -118,14 +134,10 @@ def solve(filename):
 
     file.close()
     
-    resmap = generateProximityMap(pntlist)
-
     (pmin, pmax) = findGrid(pntlist)
-    maxarea = findMaxFiniteArea(pmin, pmax, resmap)
-
-    
+    maxarea = calcProxyRegion(pmin, pmax, mindistance, pntlist)
 
 
     return(maxarea)
 
-print("Solution is {}".format(solve("testdata1.txt"),32))
+print("Solution is {}".format(solve("puzzledata.txt", 10000)))
