@@ -1,0 +1,21 @@
+position=< -9951, -50547> velocity=< 1,  5>
+position=< 40761, -20137> velocity=<-4,  2>
+position=<-30244,  30538> velocity=< 3, -3>
+position=< 20462,  -9999> velocity=<-2,  1>
+position=< 10357,  40672> velocity=<-1, -4>
+position=< 20445,  30540> velocity=<-2, -3>
+position=< 50844,  40679> velocity=<-5, -4>
+position=< 40721, -20136> velocity=<-4,  2>
+position=< 20480, -20144> velocity=<-2,  2>
+position=< 40751,  30545> velocity=<-4, -3>
+position=<-50480,  20404> velocity=< 5, -2>
+position=< -9916, -10006> velocity=< 1,  1>
+position=<-20076, -30273> velocity=< 2,  3>
+position=< 30596,  -9999> velocity=<-3,  1>
+position=<-40380, -40407> velocity=< 4,  4>
+position=<-40367,  50810> velocity=< 4, -5>
+position=< 40713, -50552> velocity=<-4,  5>
+position=<-40380, -10004> velocity=< 4,  1>
+position=< -9969,  40672> velocity=< 1, -4>
+position=< 30612, -30273> velocity=<-3,  3>
+position=< 20453, -20143> velocity=<-2,  2>
